@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4648062114AD387E00FD88F4 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4648062014AD387E00FD88F4 /* dot.png */; };
+		4648062514AD40DB00FD88F4 /* Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648062414AD40DB00FD88F4 /* Gradient.m */; };
 		46A5769514ABEEB30068F6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5769414ABEEB30068F6A4 /* UIKit.framework */; };
 		46A5769714ABEEB30068F6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5769614ABEEB30068F6A4 /* Foundation.framework */; };
 		46A5769914ABEEB30068F6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5769814ABEEB30068F6A4 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		4648062014AD387E00FD88F4 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		4648062314AD40DB00FD88F4 /* Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient.h; sourceTree = "<group>"; };
+		4648062414AD40DB00FD88F4 /* Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gradient.m; sourceTree = "<group>"; };
 		46A5769014ABEEB30068F6A4 /* protect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A5769414ABEEB30068F6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		46A5769614ABEEB30068F6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +95,8 @@
 				46A576A414ABEEB30068F6A4 /* protectAppDelegate.m */,
 				46A576B414ABF1F20068F6A4 /* Ant.h */,
 				46A576B514ABF1F20068F6A4 /* Ant.m */,
+				4648062314AD40DB00FD88F4 /* Gradient.h */,
+				4648062414AD40DB00FD88F4 /* Gradient.m */,
 				46A576BA14AC148E0068F6A4 /* Swarm.h */,
 				46A576BB14AC148E0068F6A4 /* Swarm.m */,
 				46A576A614ABEEB40068F6A4 /* MainWindow.xib */,
@@ -189,6 +194,7 @@
 				46A576AB14ABEEB40068F6A4 /* protectViewController.m in Sources */,
 				46A576B614ABF1F20068F6A4 /* Ant.m in Sources */,
 				46A576BC14AC148E0068F6A4 /* Swarm.m in Sources */,
+				4648062514AD40DB00FD88F4 /* Gradient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

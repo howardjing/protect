@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "Swarm.h"
+#import "Gradient.h"
 
 @interface protectViewController : UIViewController {
     
     Swarm *ants;
+    Gradient *sharedGradient;
+    IBOutlet UIButton *updateButton;
     
 }
 
+@property(nonatomic, retain) UIButton *updateButton; 
+
 - (void) gameLoop;
+- (IBAction) update:(id)sender;
 
 @end

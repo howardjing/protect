@@ -57,6 +57,7 @@
         [tempAnt updateWithNeighbors: ants];
         [[antsImageView objectAtIndex:i] setFrame: CGRectMake(tempAnt.x, tempAnt.y, ANT_WIDTH, ANT_HEIGHT)];
     }
+    
 }
 
 - (void)dealloc {

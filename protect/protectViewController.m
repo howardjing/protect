@@ -7,9 +7,11 @@
 //
 
 #import "protectViewController.h"
+
 #define POP 320
 
 @implementation protectViewController
+@synthesize updateButton;
 
 - (void)didReceiveMemoryWarning
 {
@@ -17,6 +19,7 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+    
 }
 
 // Game loop logic
@@ -24,10 +27,36 @@
     [ants update];
 }
 
+// for debugging
+- (IBAction)update:(id)sender {
+    [ants update];
+}
+
 - (void)dealloc {
     // release instance variables
     [ants release];
+    [sharedGradient release];
     [super dealloc];
+}
+
+// interaction
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    // BOOL touched = true
+    // update gradient with new values
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    //NSLog(@"location: %f,%f", location.x, location.y);
+    [sharedGradient depressValuesAt:location];
+    
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    // BOOL touched = false
+    // switch gradient back to normal
+    //UITouch *touch = [[event allTouches] anyObject];
+    //CGPoint location = [touch locationInView:self.view];
+    //NSLog(@"location: %f,%f", location.x, location.y);
+    //[sharedGradient restoreValuesAt:location];
 }
 
 #pragma mark - View lifecycle
@@ -37,6 +66,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // make the gradient
+    sharedGradient = [Gradient sharedGradient];
     
     // make a new ant
     ants = [[Swarm alloc] initWithPop:POP];
